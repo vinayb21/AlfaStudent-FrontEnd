@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Alfa Student</title>
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px">
+            <div class="row">
+                <div class="navbar-header" id="div1">
+                    <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
+                    <span ><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span style="background:white" class="icon-bar"></span>
+                        <span style="background:white" class="icon-bar"></span>
+                        <span style="background:white" class="icon-bar"></span>
+                    </button></span>
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse" id="div2">
+                    <ul class="nav navbar-nav">
+                        <li class="col-xs-12 col-md-9" id="li1"><form class="navbar-form" role="search">
+                            <div class="input-group" style="padding:2px">
+                                <input id="searchinput" type="text" class="form-control" placeholder="Search for stationery products" size="60" name="q">
+                                <div class="input-group-btn">
+                                    <button id="btn" class="btn btn-default" style="padding:10px 10px 8px 10px" type="submit"><span style="color:black"><i class="glyphicon glyphicon-search" ></i></span></button>
+                                </div>
+                            </div>
+                            </form>
+                        </li>
+                        <!-- Login Modal -->
+                        <div id="loginModal" class="modal fade modal-admin" role="dialog" >
+                                        <div class="modal-dialog">
+                                        </div>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Login</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="#" method="POST" class="form-inline">
+                                                    <div class="form-group" style="padding:2px">
+                                                        <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                                        <br>
+                                                        <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin" style="border-radius:0">CONTINUE</button></span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white"><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
+                            <ul class="dropdown-menu" style="background-color:#2874f0">
+                                <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Your Orders</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-heart" aria-hidden="true"></i>  Shortlists</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li style="text-align:center"><span style="font-size:12px">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
+                                <li style="text-align:center"><a data-toggle="modal" data-target="#loginModal" id="login">
+                                    <button type="button" class="btn btn-default" style="background:#e40046;border-radius:0"><span style="color:white">Login</span></button></a></li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" style="align-content:center;padding-top:-5px">
+                <ul class="nav navbar-nav">
+                    <li id="category1"><span style="font-size:15px;color:white;">BAGS <span class="caret"></span></span></li>
+                    <li id="category2"><span style="font-size:15px;color:white;">STATIONERY ITEMS <span class="caret"></span></span></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row" style="border:1px solid #d7dde5" id="cartDiv1">
+                <div class="col-xs-6 col-sm-4">
+                    <div class="row">
+                        <br>
+                        <div class="col-xs-2 col-sm-1" id="div11">
+                            <i class="fa fa-check" id="checkMark" style="color:#0ece11;font-size:22px"></i>
+                        </div>
+                        <div class="col-xs-5 col-sm-3" id="div12">
+                            <img src="img/phab1.jpg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-sm-4">
+                            <br>
+                            <span id="aTC" style="color:#0ece11;">
+                                <b >Added to Cart</b>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-6 col-sm-2">
+                    <div class="row">
+                        <br>
+                        <div class="col-xs-12 col-sm-12" style="padding-top:10px">
+                            <b>Cart subtotal</b><span stye="color:grey"> (1 item)</span>
+                            <br>
+                            <span style="color:#cc340e"><i class="fa fa-inr" aria-hidden="true"></i> <b>14,999</b></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-8 col-sm-6">
+                    <div class="row" style="padding-top:10px">
+                        <br>
+                        <div class="col-xs-12 col-sm-4">
+                            <button class="btn" style="min-width:90%;border-radius:0;background-color:#1253bc" id="cartBtn"><span style="color:white">CART</span></button>
+                        </div>
+                        <div id="inter"></div>
+                        <div class="col-xs-12 col-sm-8">
+                            <button class="btn" style="min-width:90%;border-radius:0;background-color:#edba5c" id="proceedToCheckout"><span style="color:white">PROCEED TO CHECKOUT</span></button>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h4>Customers who shopped for Lenovo Phab 2 Plus also shopped for</h4>
+            <hr style="margin-top:-1px">
+            <div class="row recommend">
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/mob1.jpg">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/mob2.jpg">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/mob2.jpg">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/mob4">
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <h4>Customers who bought Lenovo Phab 2 Plus also bought</h4>
+            <hr style="margin-top:-1px">
+            <div class="row recommend">
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/backcover.jpg">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/cover.jpg">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/cover1">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/glass.jpg">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <h4>Recommended for you on the basis of Lenovo Phab 2 Plus</h4>
+            <hr style="margin-top:-1px">
+            <div class="row recommend">
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/backcover.jpg">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/cover.jpg">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/cover1">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="img-responsive" src="img/glass.jpg">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-push-3"> 
+                    <div class="row" style="border:1px solid #d7dde5">
+                            <div class="col-xs-12 col-sm-12">
+                                <br>
+                                    <b style="padding-left:8px">Cart Subtotal</b> <span stye="color:grey"> (1 item): </span>
+                                    <span style="color:#cc340e;padding-left:5px" id="price"><i class="fa fa-inr" aria-hidden="true"></i> <b>14,999</b></span>
+                                    <span style="padding-left:40px" id="inter1"><button class="btn" style="border-radius:0;background-color:#1253bc" id="cartBtn1"><span style="color:white">CART</span></button></span>
+                                    <span style="padding-left:10px" id="inter2"><button class="btn" style="border-radius:0;background-color:#edba5c" id="proceedToCheckout1"><span style="color:white">PROCEED TO CHECKOUT</span></button></span>
+                                <br>
+                                <br>
+                            </div>
+                            <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <!--Include all compiled plugins (below), or include individual files as needed-->
+            
+        <script>
+            $(document).ready(function() {
+                if ($(window).width() >= 960) {
+                    $('#div1').addClass('col-md-2');
+                    $('#div2').addClass('navbar-right');
+                    $("#li1").addClass('col-md-push-2');
+                    $('#signin').addClass('col-md-push-4');
+                    $("#category1").css("margin-left","60px");
+                    $("#category2").css("padding-left","50px");
+                    $("#aTC").append("<br>");
+                    $('#div12').css("padding-left","25px");
+                    $(".recommend img").css("max-height","240px");
+                    
+                }
+                else if($(window).width() >= 768){
+                    $('#div1').addClass('col-sm-12');
+                    $('#div1').css("padding-left","22px");
+                    $('#div2').addClass('navbar-left col-sm-pull-5');
+                    $('#signin').addClass('col-sm-2');
+                    $('#user').hide();
+                    $("#li1").addClass('col-sm-12');
+                    $("#signin").addClass('col-sm-2');
+                    $("#category1").css("margin-left","20px");
+                    $("#category2").css("padding-left","50px");
+                    $("#aTC").append("<br>");
+                    $('#div12').css("padding-left","25px");
+                    $(".recommend img").css("max-height","240px");
+                    $("#price").append('<br>');
+                }
+                else
+                {
+                    $('#inter').append('<br><br>');
+                    var x = $("#proceedToCheckout").width();
+                    $("#cartBtn").css("width",x+26);
+                    $(".recommend img").css("max-height","120px");
+                    $('#inter1').append('<br>');
+                    $('#inter1').css("padding-left","10px");
+                    $('#inter2').css("padding-top","10px");
+                    var x1 = $("#proceedToCheckout1").width();
+                    $("#cartBtn1").css("width",x+26);
+                    $("#inter1").append('<p></p>');
+                }
+                var h = $("#div11").height();
+                $("#checkMark").css("padding-top",0.7*h);
+                $('#proceedToCheckout').click(function(){
+                    window.location.href="Proceed_To_Checkout.html";
+                })
+                $('#proceedToCheckout1').click(function(){
+                    window.location.href="Proceed_To_Checkout.html";
+                })
+            });
+        
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

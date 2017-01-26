@@ -1,0 +1,388 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+        <link href="css/table.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Alfa Student</title>
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px">
+            <div class="row">
+                <div class="navbar-header" id="div1">
+                    <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
+                    <span ><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span style="background:white" class="icon-bar"></span>
+                        <span style="background:white" class="icon-bar"></span>
+                        <span style="background:white" class="icon-bar"></span>
+                    </button></span>
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse" id="div2">
+                    <ul class="nav navbar-nav">
+                        <li class="col-xs-12 col-md-9" id="li1"><form class="navbar-form" role="search">
+                            <div class="input-group" style="padding:2px">
+                                <input id="searchinput" type="text" class="form-control" placeholder="Search for stationery products" size="60" name="q">
+                                <div class="input-group-btn">
+                                    <button id="btn" class="btn btn-default" style="padding:10px 10px 8px 10px" type="submit"><span style="color:black"><i class="glyphicon glyphicon-search" ></i></span></button>
+                                </div>
+                            </div>
+                            </form>
+                        </li>
+                        <!-- Login Modal -->
+                        <div id="loginModal" class="modal fade modal-admin" role="dialog" >
+                                        <div class="modal-dialog">
+                                        </div>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Login</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form method="POST" class="form-inline">
+                                                    <div class="form-group" style="padding:2px">
+                                                        <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                                        <br>
+                                                        <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin" style="border-radius:0">CONTINUE</button></span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white"><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
+                            <ul class="dropdown-menu" style="background-color:#2874f0">
+                                <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Your Orders</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-heart" aria-hidden="true"></i>  Shortlists</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li style="text-align:center"><span style="font-size:12px">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
+                                <li style="text-align:center"><a data-toggle="modal" data-target="#loginModal" id="login">
+                                    <button type="button" class="btn btn-default" style="background:#e40046;border-radius:0"><span style="color:white">Login</span></button></a></li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" style="align-content:center;padding-top:-5px">
+                <ul class="nav navbar-nav">
+                    <li id="category1"><span style="font-size:15px;color:white;">BAGS <span class="caret"></span></span></li>
+                    <li id="category2"><span style="font-size:15px;color:white;">STATIONERY ITEMS <span class="caret"></span></span></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. LOGIN / SIGNUP</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <form action="#" method="POST" class="form-inline">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12" style="left:4%">
+                                <span style="font-size:12px;color:grey;">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                </div>
+                                <br>
+                                <div class="col-xs-12 col-sm-6 col-md-6" style="text-align:left" id="inputDiv">
+                                    <input type="text" class="form-control" id="mobOrEmail1" placeholder="Mobile Number/ Email" name="Name">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6" style="text-align:left" id="continueDiv">
+                                    <button type="submit" class="btn" style="border-radius:0;background-color:#e40046" id="continue1"><span style="color:white">CONTINUE</span></button>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12" id="or">
+                                    <span style="font-size:12px;color:grey;">Or Login Using</span>
+                                </div>
+                                <br>
+                                <div class="col-xs-6 col-sm-3 col-md-3" id="buttonDiv">
+                                    <button type="submit" class="btn btn-primary" style="border-radius:0" id="facebook"><span style="color:white"><i class="fa fa-facebook" aria-hidden="true"></i>   Facebook</span></button>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-3" id="subDiv">
+                                    <button type="submit" class="btn" style="border-radius:0;background-color:#f4942e" id="google"><span style="color:white"><i class="fa fa-google-plus" aria-hidden="true"></i>   Google</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>    
+                  </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2. DELIVERY ADDRESS</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <br>
+                    <div class="container">
+                        <form method="POST" class="form-inline">
+                            <div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="addressPincode" style="color:#61666d">Pincode</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="number" id="addressPincode" name="addressPincode" placeholder="  Pincode" style="border:1px solid #babfc6" min="0" required>
+                                    </div>    
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="fullName" style="color:#61666d">Name</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="text" id="fullName" name="fullName" placeholder="  Full Name" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="address" style="color:#61666d">Address</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <textarea rows="3" id="address" name="address" placeholder="  Flat/House No. Colony/Street No." required></textarea>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="locality" style="color:#61666d">Locality/Landmark</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="text" id="locality" name="locality" placeholder="  Near Apollo Hospital etc." required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="city" style="color:#61666d">City</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="text" id="city" name="city" placeholder="  City" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="state" style="color:#61666d">State</label> 
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="text" id="state" name="state" placeholder="  State" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="mobNo" style="color:#61666d">Mobile Number</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="tel" id="mobNo" name="mobNo" placeholder="  Mobile Number" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="alterMobNo" style="color:#61666d">Alternate Mobile No.</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="tel" id="alterMobNo" name="alterMobNo" placeholder="  Alternate Mobile No." required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <label for="addressType" style="color:#61666d">Address Type</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="radio" name="addressType" value="Home/Personal" required>  Home/Personal
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <input type="radio" name="addressType" value="Office/Commercial">  Office/Commercial
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2 col-md-push-2">
+                                        <button type="submit" class="btn" style="border-radius:0;background-color:#e40046;padding-left:24px;padding-right:24px" id="saveNContinue"><span style="color:white" >SAVE &amp; CONTINUE</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">3. REVIEW ORDER</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                        <div class="row" style="align:left">
+                            <div class="col-xs-12 col-sm-5" style="text-align:center" id="item">ITEM<hr><br>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <img src="img/phab1.jpg" class="thumbnail img-responsive" style="margin:auto;">
+                                    </div>
+                                    <div class="col-xs-8" style="text-align:left">
+                                        <span style="color:grey">MOBILE</span>
+                                        <br>
+                                        Lenovo Phab 2 Plus
+                                        <br>
+                                        <br>
+                                        <span style="color:grey">SCREEN SIZE</span>
+                                        <br>
+                                        6.4'
+                                        <br>
+                                        <br>
+                                        Seller: XYZ
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-1" style="text-align:center" id="qty">QTY<hr>
+                                <div class="row">
+                                    <br>
+                                    <span style="border:1px solid grey;padding:5px">1</span>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-1" style="text-align:center" id="price">PRICE<hr>
+                                <div class="row">
+                                    <br>
+                                    <span><i class="fa fa-inr" aria-hidden="true"></i> 14,999</span>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3" style="text-align:center" id="deliveryDetails">DELIVERY DETAILS<hr>
+                                <div class="row" style="text-align:center">
+                                    <br>
+                                    Delivery by Sat, 21st January
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-2" style="text-align:center" id="subtotal">SUBTOTAL<hr>
+                                <div class="row">
+                                    <br>
+                                    <span><i class="fa fa-inr" aria-hidden="true"></i> 14,999</span>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">4. MAKE PAYMENT</a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Select a Payment Method</h4>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <input type="radio" name="payment" value="creaditCard" required>  Credit Card
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <input type="radio" name="payment" value="debitCard">  Debit Card
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <input type="radio" name="payment" value="netBanking">  Net Banking
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <!--Include all compiled plugins (below), or include individual files as needed-->
+            
+        <script>
+            $(document).ready(function() {
+                if ($(window).width() >= 960) {
+                    //alert('Desktop');
+                    $('#div1').addClass('col-md-2');
+                    $('#div2').addClass('navbar-right');
+                    $("#li1").addClass('col-md-push-2');
+                    $('#signin').addClass('col-md-push-4');
+                    $("#category1").css("margin-left","60px");
+                    $("#category2").css("padding-left","50px");
+                    $("#continueDiv").css("left","3%");
+                    $("#inputDiv").css("left","3%");
+                    $('#or').css("left","3%");
+                    $("#buttonDiv").css("left","3%");
+                    $("#subDiv").css("left","2%");
+                    
+                }
+                else if($(window).width() >= 768){
+                    alert('tablet');
+                    $('#div1').addClass('col-sm-12');
+                    $('#div1').css("padding-left","22px");
+                    $('#div2').addClass('navbar-left col-sm-pull-5');
+                    $('#signin').addClass('col-sm-2');
+                    $('#user').hide();
+                    $("#li1").addClass('col-sm-12');
+                    $("#signin").addClass('col-sm-2');
+                    $("#category1").css("margin-left","20px");
+                    $("#category2").css("padding-left","50px");
+                    $("#continueDiv").css("left","3%");
+                    $("#inputDiv").css("left","3%");
+                    $('#or').css("left","3%");
+                }
+                else
+                {
+                    //alert('mobile');
+                    $("#or").css("text-align","center");
+                    $("#item").css('border',"1px solid #cbcfd6");
+                    $("#qty").css('border',"1px solid #cbcfd6");
+                    $("#price").css('border',"1px solid #cbcfd6");
+                    $("#deliveryDetails").css('border',"1px solid #cbcfd6");
+                    $("#subtotal").css('border',"1px solid #cbcfd6");
+                }
+                var x = $('#mobOrEmail1').width();
+                $('#continue1').css('width',x+26);
+                $('#address').attr('cols',22);
+                
+            });
+        
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
