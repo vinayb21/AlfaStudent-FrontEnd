@@ -109,7 +109,7 @@
             <div class="col-md-4" style="border:1px solid #c7ccd6;text-align:center">
                 <img  src="img/phab11.jpg" id="imgdynamic" style="margin:auto;height:525px;width:300px">
                 <div id="div3" style="align:center; padding-bottom:10px;">
-                    <button data-toggle="modal" data-target="#addToCartModal" id="addTocart" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>     ADD TO CART
+                    <button data-toggle="modal" data-target="#addToCartModal" id="addToCart" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>     ADD TO CART
                     </button>
                     <!-- Add To Cart Modal -->
                         <div id="addToCartModal" class="modal fade modal-admin" role="dialog">
@@ -138,7 +138,7 @@
                 <span style="padding:8px;margin-left:-6px"><span class="label label-success">X.Y <i id="star1" class="fa fa-star" aria-hidden="true"></i></span></span><span style="color:#c7ccd6;font-size:12px">  X Ratings &amp; Y Reviews</span>
                 <br>
                 <br>
-                <b style="font-size:18px"><i class="fa fa-inr" aria-hidden="true"></i> XYZ</b>
+                <b style="font-size:18px"><i class="fa fa-inr" aria-hidden="true"></i> <span id="price"></span></b>
                 <br>
                 <br>
                 <i style="color:#5cb85c" class="fa fa-tags" aria-hidden="true"></i><span> Offers</span>
@@ -479,6 +479,11 @@
                     $("#div3").css("padding-left","10px");
                     $("<br><br>").appendTo("#pro");
                     $('<br>').appendTo("#faStack");
+                    $("#mycarousel").css("height","180px");
+                    $("#mycarousel1").css("height","180px");
+                    
+                    var x = $("#addToCart").width();
+                    $("#btn2").css("width",x+"px");
                 }
                 
                 $('#phab1').hover(
@@ -529,6 +534,6 @@
             
         </script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/ajax.js"></script>
+        <!--<script src="js/ajax.js"></script>-->
     </body>
 </html>
