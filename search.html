@@ -1,0 +1,394 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Alfa Student</title>
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px">
+            <div class="row">
+                <div class="navbar-header" id="div1">
+                    <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
+                    <span ><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span style="background:white" class="icon-bar"></span>
+                        <span style="background:white" class="icon-bar"></span>
+                        <span style="background:white" class="icon-bar"></span>
+                    </button></span>
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse" id="div2">
+                    <ul class="nav navbar-nav">
+                        <li class="col-xs-12 col-md-9" id="li1"><form class="navbar-form" role="search">
+                            <div class="input-group" style="padding:2px">
+                                <input id="searchinput" type="text" class="form-control" placeholder="Search for stationery products" size="60" name="q">
+                                <div class="input-group-btn">
+                                    <button id="btn" class="btn btn-default" style="padding:10px 10px 8px 10px" type="submit"><span style="color:black"><i class="glyphicon glyphicon-search" ></i></span></button>
+                                </div>
+                            </div>
+                            </form>
+                        </li>
+                        <!-- Login Modal -->
+                        <div id="loginModal" class="modal fade modal-admin" role="dialog" >
+                                        <div class="modal-dialog">
+                                        </div>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Login</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="#" method="POST" class="form-inline">
+                                                    <div class="form-group" style="padding:2px">
+                                                        <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                                        <br>
+                                                        <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin">CONTINUE</button></span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white"><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
+                            <ul class="dropdown-menu" style="background-color:#2874f0">
+                                <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Your Orders</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-heart" aria-hidden="true"></i>  Shortlists</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li style="text-align:center"><span style="font-size:12px">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
+                                <li style="text-align:center"><a data-toggle="modal" data-target="#loginModal" id="login">
+                                    <button type="button" class="btn btn-default" style="background:#e40046"><span style="color:white">Login</span></button></a></li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" style="align-content:center;padding-top:-5px">
+                <ul class="nav navbar-nav">
+                    <li id="category1"><span style="font-size:15px;color:white;">BAGS <span class="caret"></span></span></li>
+                    <li id="category2"><span style="font-size:15px;color:white;">STATIONERY ITEMS <span class="caret"></span></span></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row myli">
+            <div class="col-xs-12 col-sm-2" >
+                <b style="font-size:19px;" id="filterHead">Filters</b>
+                <hr style="margin-top:-1px">
+                <span id="pick" style="padding-left:10%;font-weight:600">PICK A CATEGORY</span>
+                <br>
+                <br>
+                <div id="cat1" style="padding-left:10%">
+                    <i class="fa fa-chevron-left" aria-hidden="true" id="flag11"></i><i class="fa fa-chevron-down" aria-hidden="true" id="flag12"></i> <b style="font-size:15px">Books</b>
+                </div>
+                <div id="subcat1"><ul style="list-style:none;padding-top:2%"><li>Mathematics</li><li>Physics</li><li>Chemistry</li><li>Biology</li></ul></div>
+                <div id="cat2" style="padding-left:10%;padding-top:4%">
+                    <i class="fa fa-chevron-left" aria-hidden="true" id="flag21"></i><i class="fa fa-chevron-down" aria-hidden="true" id="flag22"></i> <b style="font-size:15px">Educational Toys</b>
+                </div>
+                <div id="subcat2"><ul style="list-style:none;padding-top:2%"><li>Counting Games</li><li>Science Games</li><li>Chemistry Kit</li></ul></div>
+                 <div id="cat3" style="padding-left:10%;padding-top:4%">
+                    <i class="fa fa-chevron-left" aria-hidden="true" id="flag31"></i><i class="fa fa-chevron-down" aria-hidden="true" id="flag32"></i> <b style="font-size:15px">Furniture</b>
+                </div>
+                <div id="subcat3"><ul style="list-style:none;padding-top:2%"><li>Study Table</li><li>Bookshelves</li><li>Table Lamp</li><li>Chairs</li></ul></div>
+                 <div id="cat4" style="padding-left:10%;padding-top:4%">
+                    <i class="fa fa-chevron-left" aria-hidden="true" id="flag41"></i><i class="fa fa-chevron-down" aria-hidden="true" id="flag42"></i> <b style="font-size:15px">School &amp; College Bags</b>
+                </div>
+                <div id="subcat4"><ul style="list-style:none;padding-top:2%"><li>School Bags</li><li>College Bags</li><li>Casual bags</li><li>Laptop bags</li></ul></div>
+                 <div id="cat5" style="padding-left:10%;padding-top:4%">
+                    <i class="fa fa-chevron-left" aria-hidden="true" id="flag51"></i><i class="fa fa-chevron-down" aria-hidden="true" id="flag52"></i> <b style="font-size:15px">School Uniform</b>
+                </div>
+                <div id="subcat5"><ul style="list-style:none;padding-top:2%"><li>Sports Uniform</li><li>Daily Uniform</li></ul></div>
+                 <div id="cat6" style="padding-left:10%;padding-top:4%">
+                    <i class="fa fa-chevron-left" aria-hidden="true" id="flag61"></i><i class="fa fa-chevron-down" aria-hidden="true" id="flag62"></i> <b style="font-size:15px">Sports Accessories</b>
+                </div>
+                <div id="subcat6"><ul style="list-style:none;padding-top:2%"><li>Cricket Kit</li><li>Basketball</li><li>Volleyball Net</li><li>Badminton Rackets</li></ul></div>
+                 <div id="cat7" style="padding-left:10%;padding-top:4%">
+                    <i class="fa fa-chevron-left" aria-hidden="true" id="flag71"></i><i class="fa fa-chevron-down" aria-hidden="true" id="flag72"></i> <b style="font-size:15px">Stationery Products</b>
+                </div>
+                <div id="subcat7"><ul style="list-style:none;padding-top:2%"><li>Pen &amp; Pencils</li><li>Ruler</li><li>Crayons</li><li>Markers</li><li>Paper Clips</li></ul></div>
+            </div>
+            <div class="col-xs-12 col-sm-10">
+                <div id="sort">
+                <b style="font-size:15px;">Sort By</b><span style="font-family:Arial;padding:0px 12px 0px 12px" id="relevance">Relevance</span><span id="popularity" style="font-family:Arial;padding:0px 12px 0px 0px">Popularity</span><span id="pricel2h" style="font-family:Arial;padding:0px 12px 0px 0px">Price - Low to High</span><span id="priceh2l" style="font-family:Arial;">Price - High to Low</span>
+                </div>
+                <hr style="margin-top:4px">
+                <div class="row" style="text-align:center">
+                    <span style="font-size:18px;font-weight:600;">Showing 1 - 25 of 450 results of "Searched word goes here"</span>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3">
+                        <img src="img/bag1.jpg" class="img-responsive image2">
+                        <div class="row" style="padding-left:30%">
+                            F Gear Axe 1<br>
+                        </div>
+                        <div class="row" style="padding-left:36%;padding-top:2%">
+                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">4.1  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="row" style="padding-left:21%;padding-top:3%">
+                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 599 </span><strike style="color:grey">2499</strike> <span style="color:#388e3c;font-size:12px">  76% off</span>
+                        </div>
+                        <div class="row" style="padding-left:15%">
+                            <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <img src="img/bag2.jpg" class="img-responsive image2">
+                        <div class="row" style="text-align:center">
+                            F Gear Axe 2<br>
+                        </div>
+                        <div class="row" style="text-align:center;padding-top:2%">
+                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">3.8  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="row" style="text-align:center;padding-top:3%">
+                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 828 </span><strike style="color:grey">2299</strike> <span style="color:#388e3c;font-size:12px">  63% off</span>
+                        </div>
+                        <div class="row" style="text-align:center">
+                            <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <img src="img/bag3.jpg" class="img-responsive image2">
+                        <div class="row" style="text-align:center">
+                            F Gear Axe 3<br>
+                        </div>
+                        <div class="row" style="text-align:center;padding-top:2%">
+                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">4.4  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="row" style="text-align:center;padding-top:3%">
+                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 1721 </span><strike style="color:grey">3449</strike> <span style="color:#388e3c;font-size:12px">  50% off</span>
+                        </div>
+                        <div class="row" style="text-align:center">
+                            <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <img src="img/bag4.jpg" class="img-responsive image2">
+                        <div class="row" style="text-align:center">
+                            F Gear Axe 4<br>
+                        </div>
+                        <div class="row" style="text-align:center;padding-top:2%">
+                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">4.3  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="row" style="text-align:center;padding-top:3%">
+                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 473 </span><strike style="color:grey">1050</strike> <span style="color:#388e3c;font-size:12px">  54% off</span>
+                        </div>
+                        <div class="row" style="text-align:center">
+                            <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <!--Include all compiled plugins (below), or include individual files as needed-->
+            
+        <script>
+            $(document).ready(function() {
+                if ($(window).width() >= 960) {
+                    $('#div1').addClass('col-md-2');
+                    $('#div2').addClass('navbar-right');
+                    $("#li1").addClass('col-md-push-2');
+                    $('#signin').addClass('col-md-push-4');
+                    $("#category1").css("margin-left","60px");
+                    $("#category2").css("padding-left","50px");
+                    $("#filterHead").css("padding-left","10%");
+                    $("#sort").css("margin-left","50%");
+                    $(".image2").css("max-height","220px")
+                }
+                else if($(window).width() >= 768){
+                    $('#div1').addClass('col-sm-12');
+                    $('#div1').css("padding-left","22px");
+                    $('#div2').addClass('navbar-left col-sm-pull-5');
+                    $('#signin').addClass('col-sm-2');
+                    $('#user').hide();
+                    $("#li1").addClass('col-sm-12');
+                    $("#signin").addClass('col-sm-2');
+                    $("#category1").css("margin-left","20px");
+                    $("#category2").css("padding-left","50px");
+                    $("#filterHead").css("padding-left","10%");
+                }
+                else
+                {
+                    $("#filterHead").css("padding-left","35%");
+                }
+                // Subcategories hidden at the start
+                $("#subcat1").hide();
+                $("#subcat2").hide();
+                $("#subcat3").hide();
+                $("#subcat4").hide();
+                $("#subcat5").hide();
+                $("#subcat6").hide();
+                $("#subcat7").hide();
+                // Down chevron hidden
+                $("#flag12").hide();
+                $("#flag22").hide();
+                $("#flag32").hide();
+                $("#flag42").hide();
+                $("#flag52").hide();
+                $("#flag62").hide();
+                $("#flag72").hide();
+                // li element
+                $(".myli li").css("padding","2% 0 2% 0");
+                // sort section styling
+                $("#relevance").click(function(){
+                    $("#relevance").css("color","#5089e5");
+                    $("#relevance").css("font-weight","bold");
+                    $("#popularity").css("font-weight","normal");
+                    $("#pricel2h").css("font-weight","normal");
+                    $("#priceh2l").css("font-weight","normal");
+                    $("#popularity").css("color","black");
+                    $("#pricel2h").css("color","black");
+                    $("#priceh2l").css("color","black");
+                });
+                $("#popularity").click(function(){
+                    $("#popularity").css("color","#5089e5");
+                    $("#popularity").css("font-weight","bold");
+                    $("#relevance").css("font-weight","normal");
+                    $("#pricel2h").css("font-weight","normal");
+                    $("#priceh2l").css("font-weight","normal");
+                    $("#relevance").css("color","black");
+                    $("#pricel2h").css("color","black");
+                    $("#priceh2l").css("color","black");
+                });
+                $("#pricel2h").click(function(){
+                    $("#pricel2h").css("color","#5089e5");
+                    $("#pricel2h").css("font-weight","bold");
+                    $("#relevance").css("font-weight","normal");
+                    $("#popularity").css("font-weight","normal");
+                    $("#priceh2l").css("font-weight","normal");
+                    $("#popularity").css("color","black");
+                    $("#relevance").css("color","black");
+                    $("#priceh2l").css("color","black");
+                });
+                $("#priceh2l").click(function(){
+                    $("#priceh2l").css("color","#5089e5");
+                    $("#priceh2l").css("font-weight","bold");
+                    $("#relevance").css("font-weight","normal");
+                    $("#popularity").css("font-weight","normal");
+                    $("#pricel2h").css("font-weight","normal");
+                    $("#popularity").css("color","black");
+                    $("#pricel2h").css("color","black");
+                    $("#relevance").css("color","black");
+                });
+                // subcategories toggle
+                $( "#cat1" ).click(function() {     
+                    if($('#subcat1:visible').length)
+                    {
+                        $('#subcat1').hide();
+                        $('#flag12').hide();
+                        $('#flag11').show();
+                    }
+                    else
+                    {
+                        $('#subcat1').show();       
+                        $('#flag11').hide();
+                        $('#flag12').show();
+                    }
+                });
+                $( "#cat2" ).click(function() {     
+                    if($('#subcat2:visible').length)
+                    {
+                        $('#subcat2').hide();
+                        $('#flag22').hide();
+                        $('#flag21').show();
+                    }
+                    else
+                    {
+                        $('#subcat2').show();       
+                        $('#flag21').hide();
+                        $('#flag22').show();
+                    }
+                });
+                $( "#cat3" ).click(function() {     
+                    if($('#subcat3:visible').length)
+                    {
+                        $('#subcat3').hide();
+                        $('#flag32').hide();
+                        $('#flag31').show();
+                    }
+                    else
+                    {
+                        $('#subcat3').show();       
+                        $('#flag31').hide();
+                        $('#flag32').show();
+                    }
+                });
+                $( "#cat4" ).click(function() {     
+                    if($('#subcat4:visible').length)
+                    {
+                        $('#subcat4').hide();
+                        $('#flag42').hide();
+                        $('#flag41').show();
+                    }
+                    else
+                    {
+                        $('#subcat4').show();       
+                        $('#flag41').hide();
+                        $('#flag42').show();
+                    }
+                });
+                $( "#cat5" ).click(function() {     
+                    if($('#subcat5:visible').length)
+                    {
+                        $('#subcat5').hide();
+                        $('#flag52').hide();
+                        $('#flag51').show();
+                    }
+                    else
+                    {
+                        $('#subcat5').show();       
+                        $('#flag51').hide();
+                        $('#flag52').show();
+                    }
+                });
+                $( "#cat6" ).click(function() {     
+                    if($('#subcat6:visible').length)
+                    {
+                        $('#subcat6').hide();
+                        $('#flag62').hide();
+                        $('#flag61').show();
+                    }
+                    else
+                    {
+                        $('#subcat6').show();       
+                        $('#flag61').hide();
+                        $('#flag62').show();
+                    }
+                });
+                $( "#cat7" ).click(function() {     
+                    if($('#subcat7:visible').length)
+                    {
+                        $('#subcat7').hide();
+                        $('#flag72').hide();
+                        $('#flag71').show();
+                    }
+                    else
+                    {
+                        $('#subcat7').show();       
+                        $('#flag71').hide();
+                        $('#flag72').show();
+                    }
+                });
+                
+            });
+        
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
