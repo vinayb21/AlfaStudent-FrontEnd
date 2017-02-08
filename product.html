@@ -83,8 +83,94 @@
             </div>
             <div class="container" style="align-content:center;padding-top:-5px">
                 <ul class="nav navbar-nav">
-                    <li id="category1"><span style="font-size:15px;color:white;">BAGS <span class="caret"></span></span></li>
-                    <li id="category2"><span style="font-size:15px;color:white;">STATIONERY ITEMS <span class="caret"></span></span></li>
+                   <li id="category1">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>BAGS <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">College Bags</a>
+                                <a href="#">School Bags</a>
+                                <a href="#">Casual Bags</a>
+                                <a href="#">Laptop Bags</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category2">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>BOOKS <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Mathemtics</a>
+                                <a href="#">Physics</a>
+                                <a href="#">Chemistry</a>
+                                <a href="#">Biology</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category3">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>STATIONERY <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Pen &amp; Pencils</a>
+                                <a href="#">Markers</a>
+                                <a href="#">Paper Clips</a>
+                                <a href="#">Crayon Colours</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category4">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>FURNITURE <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Study Table</a>
+                                <a href="#">Bookshelves</a>
+                                <a href="#">Table Lamp</a>
+                                <a href="#">Chair</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category5">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>SPORTS ACCESSORIES <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Cricket Kit</a>
+                                <a href="#">Basketball</a>
+                                <a href="#">Volleyball &amp; Net</a>
+                                <a href="#">Badminton &amp; Tennis</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category6">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>UNIFORM <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#" style="text-align:center">Sports Uniform &amp; Shoes</a>
+                                <a href="#" style="text-align:center">Daily Uniform &amp; Shoes</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category7">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>EDUCATIONAL TOYS <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Chemistry Kit</a>
+                                <a href="#">Science Games</a>
+                                <a href="#">Counting Games</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -455,11 +541,16 @@
                     $('#div1').addClass('col-md-2');
                     $('#div2').addClass('navbar-right');
                     $("#li1").addClass('col-md-push-2');
-                    $('#signin').addClass('col-md-push-4');
+                    $('#signin').addClass('col-md-push-6');
                     $("#category1").css("margin-left","60px");
                     $("#category2").css("padding-left","50px");
                     $("#div3").css("padding-left","42px");
                     $("#div3").css("margin-left","-42px");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
                     
                 }
                 else if($(window).width() >= 768){
@@ -477,6 +568,11 @@
                     $("#loginDiv").addClass('col-sm-push-3');
                     $("#div3").hide();
                     $("#buttons").append("<div id='div31' class='container' style='text-align:center;'><button data-toggle='modal' data-target='#addToCartModal1' id='addToCart1' class='btn btn-primary'><i class='fa fa-shopping-cart' aria-hidden='true'></i>     ADD TO CART</button><!-- Add To Cart Modal --><div id='addToCartModal1' class='container modal fade modal-admin' role='dialog'><div class='modal-dialog' style='background-color:black;'><button type='button' class='close' data-dismiss='modal'>&times;</button></div><div class='modal-content row' style='background:black'><div class='modal-body'><span class='fa-stack fa-sm' style='right:2%' id='faStack'><i class='fa fa-circle fa-stack-2x icon-background1' style='color:#4adb69'></i>                        <i class='fa fa-check fa-stack-1x' style='color:black'></i></span><span style='color:white' id=p'ro'>Product added to cart successfully.</span><span style='color:#4abbdb;padding-left:20px'><a href='cart.html'><b>GO TO CART</b></a></span></div></div></div><span style='padding-left:20px'><button id='btn2' class='btn btn-warning'><i class='fa fa-bolt' aria-hidden='true'></i>   BUY NOW</button></span></div>");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
                     
                 }
                 else
@@ -525,6 +621,6 @@
         
             
         </script>
-        <!--<script src="js/ajax.js"></script>-->
+        <script src="js/ajax.js"></script>
     </body>
 </html>

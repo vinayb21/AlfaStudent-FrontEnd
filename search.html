@@ -12,7 +12,7 @@
         <title>Alfa Student</title>
     </head>
     
-    <body>
+    <body onResize="resizeWindow()">
         
         <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px">
             <div class="row">
@@ -77,8 +77,94 @@
             </div>
             <div class="container" style="align-content:center;padding-top:-5px">
                 <ul class="nav navbar-nav">
-                    <li id="category1"><span style="font-size:15px;color:white;">BAGS <span class="caret"></span></span></li>
-                    <li id="category2"><span style="font-size:15px;color:white;">STATIONERY ITEMS <span class="caret"></span></span></li>
+                    <li id="category1">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>BAGS <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">College Bags</a>
+                                <a href="#">School Bags</a>
+                                <a href="#">Casual Bags</a>
+                                <a href="#">Laptop Bags</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category2">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>BOOKS <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Mathemtics</a>
+                                <a href="#">Physics</a>
+                                <a href="#">Chemistry</a>
+                                <a href="#">Biology</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category3">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>STATIONERY <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Pen &amp; Pencils</a>
+                                <a href="#">Markers</a>
+                                <a href="#">Paper Clips</a>
+                                <a href="#">Crayon Colours</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category4">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>FURNITURE <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Study Table</a>
+                                <a href="#">Bookshelves</a>
+                                <a href="#">Table Lamp</a>
+                                <a href="#">Chair</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category5">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>SPORTS ACCESSORIES <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Cricket Kit</a>
+                                <a href="#">Basketball</a>
+                                <a href="#">Volleyball &amp; Net</a>
+                                <a href="#">Badminton &amp; Tennis</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category6">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>UNIFORM <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#" style="text-align:center">Sports Uniform &amp; Shoes</a>
+                                <a href="#" style="text-align:center">Daily Uniform &amp; Shoes</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category7">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>EDUCATIONAL TOYS <span class="caret"></span></span>
+                              <div class="dropdown-content">
+                                <a href="#">Chemistry Kit</a>
+                                <a href="#">Science Games</a>
+                                <a href="#">Counting Games</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -204,12 +290,17 @@
                     $('#div1').addClass('col-md-2');
                     $('#div2').addClass('navbar-right');
                     $("#li1").addClass('col-md-push-2');
-                    $('#signin').addClass('col-md-push-4');
+                    $('#signin').addClass('col-md-push-6');
                     $("#category1").css("margin-left","60px");
                     $("#category2").css("padding-left","50px");
                     $("#filterHead").css("padding-left","10%");
                     $("#sort").css("margin-left","50%");
-                    $(".image2").css("max-height","220px")
+                    $(".image2").css("max-height","220px");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
                 }
                 else if($(window).width() >= 768){
                     $('#div1').addClass('col-sm-12');
@@ -222,6 +313,11 @@
                     $("#category1").css("margin-left","20px");
                     $("#category2").css("padding-left","50px");
                     $("#filterHead").css("padding-left","10%");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
                 }
                 else
                 {
@@ -387,6 +483,8 @@
                 });
                 
             });
+            
+            
         
         </script>
         <script src="js/bootstrap.min.js"></script>
