@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Alfa Student</title>
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px" id="one">
+            <div class="row">
+                <div class="navbar-header" id="div1">
+                    <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
+                    
+                    
+                    <span><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span style="background:white" class="icon-bar"></span>
+                            <span style="background:white" class="icon-bar"></span>
+                            <span style="background:white" class="icon-bar"></span>
+                        </button>
+                    </span>
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse" id="div2">
+                    <ul class="nav navbar-nav">
+                        <li class="col-xs-12 col-md-9" id="li1"><form class="navbar-form" role="search">
+                            <div class="input-group" style="padding:2px">
+                                <input id="searchinput" type="text" class="form-control" placeholder="Search for stationery products" size="60" name="q">
+                                <div class="input-group-btn">
+                                    <button id="btn" class="btn btn-default" style="padding:10px 10px 2px 10px" type="submit"><span style="color:black"><i class="glyphicon glyphicon-search" ></i></span></button>
+                                </div>
+                            </div>
+                            </form>
+                        </li>
+                        <!-- Login Modal -->
+                        <div id="loginModal" class="modal fade modal-admin" role="dialog" >
+                            <div class="modal-dialog">
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Login</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#" method="POST" class="form-inline">
+                                        <div class="form-group" style="padding:2px">
+                                            <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                            <br>
+                                            <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin">CONTINUE</button></span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white"><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
+                            <ul class="dropdown-menu" style="background-color:#2874f0">
+                                <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Your Orders</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-heart" aria-hidden="true"></i>  Shortlists</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li style="text-align:center"><span style="font-size:12px">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
+                                <li style="text-align:center"><a data-toggle="modal" data-target="#loginModal" id="login">
+                                    <button type="button" class="btn btn-default" style="background:#e40046"><span style="color:white">Login</span></button></a></li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" style="align-content:center;padding-top:-5px">
+                <ul class="nav navbar-nav">
+                    <li id="category1">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>BAGS <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#">College Bags</a>
+                                <a href="#">School Bags</a>
+                                <a href="#">Casual Bags</a>
+                                <a href="#">Laptop Bags</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category2">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>BOOKS <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#">Mathematics</a>
+                                <a href="#">Physics</a>
+                                <a href="#">Chemistry</a>
+                                <a href="#">Biology</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category3">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>STATIONERY <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#">Pen &amp; Pencils</a>
+                                <a href="#">Markers</a>
+                                <a href="#">Paper Clips</a>
+                                <a href="#">Crayon Colours</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category4">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>FURNITURE <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#">Study Table</a>
+                                <a href="#">Bookshelves</a>
+                                <a href="#">Table Lamp</a>
+                                <a href="#">Chair</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category5">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>SPORTS ACCESSORIES <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#">Cricket Kit</a>
+                                <a href="#">Basketball</a>
+                                <a href="#">Volleyball &amp; Net</a>
+                                <a href="#">Badminton &amp; Tennis</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category6">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>UNIFORM <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="text-align:center">Sports Uniform &amp; Shoes</a>
+                                <a href="#" style="text-align:center">Daily Uniform &amp; Shoes</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category7">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>EDUCATIONAL TOYS <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#">Chemistry Kit</a>
+                                <a href="#">Science Games</a>
+                                <a href="#">Counting Games</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="row" style="background-color:#f3f3f3">
+            <div class="col-xs-3 col-sm-2" style="padding:10px 10px 10px 14px;color:white;border:1px solid #dddddd;border-top-color: #e77600;background-color:white;">
+                <b style="font-size:18px;padding:5px 0px 5px 14px;color:#c45500;" id="yourList">Your Lists</b>
+            </div>
+            <div class="col-xs-9 col-sm-10">
+                <p style="text-align:right;padding-top:13px"><a data-toggle="modal" data-target="#createListModal" id="createList">Create a list</a><span style="padding-right:15px"></span><a data-toggle="modal" data-target="#listSettingsModal" id="listSettings">List settings</a><span style="padding-right:15px"></span></p>
+            </div>
+        </div>
+        
+        <!-- Create List Modal -->
+        <div id="createListModal" class="modal fade modal-admin" role="dialog" >
+            <div class="modal-dialog">
+            </div>
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#f3f3f3">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Create a List</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST" class="form-inline">
+                        <b>List Name</b>
+                        <br>
+                        <input type="text" name="listName">
+                        <br>
+                        <br>
+                        <span style="padding:0px 0px 0px 10px">
+                            <button class="btn btn-warning" data-dismiss="modal" id="cancelCreate">Cancel</button>
+                            <span style="padding-left:10px"></span>
+                            <button type="submit" class="btn btn-primary" value="Create a Wish List">Create a Wish List</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- List Settings Modal -->
+        <div id="listSettingsModal" class="modal fade modal-admin" role="dialog" >
+            <div class="modal-dialog">
+            </div>
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#f3f3f3">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">List Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr style="background-color:#f3f3f3">
+                            <td><b>Wish Lists</b></td>
+                            <td><b>Details</b></td>
+                            <td><b>Delete</b></td>
+                        </tr>
+                        <tr style="background-color:white">
+                            <td style="background-color:white">Wish List1</td>
+                            <td style="background-color:white;color:#337ab7">View Details</td>
+                            <td style="background-color:white"><button class="btn btn-warning">Delete</button></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-xs-4">
+                  <b style="font-size:17px;padding-left:30px" id="userWishList">  User's Wish List</b>
+            </div>
+            <div class="col-xs-6 col-sm-push-6">
+                <div class="dropdown">
+                    <span class="dropdown-toggle" type="button" data-toggle="dropdown" style="color:#337ab7" id="filterAndSort"> Filter &amp; Sort
+                        <span class="caret"></span></span>
+                    <ul class="dropdown-menu">
+                      <li><a><b>Filters</b></a></li>
+                      <li><a>Purchased</a></li>
+                      <li><a>Unpurchased</a></li>
+                      <li><a>Purchased &amp; Unpurchased</a></li>
+                      <li><a>Items with price drops</a></li>
+                      <li class="divider"></li>
+                      <li><a><b>Sorts</b></a></li>
+                      <li><a>Price (high to low)</a></li>
+                      <li><a>Price (low to high)</a></li>
+                      <li><a>Date Added</a></li>
+                      <li><a>Priority (high to low)</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        
+        <div class="row">
+            <table>
+                <tr>
+                    <td class="col-xs-3" style="text-align:center">
+                        <b >Product</b>
+                    </td>
+                    <td class="col-xs-6" style="text-align:center">
+                        <b>Description</b>
+                    </td>
+                    <td class="col-xs-3" style="text-align:center">
+                        <b>Options</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-3" >
+                        <img class="img img-responsive" src="img/bag2.jpg">
+                    </td>
+                    <td class="col-xs-6" style="text-align:center">
+                        <b style="color:#4595dc">WildCraft Bag 1</b>
+                        <br>
+                        <span><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:#ddd;" class="fa fa-star" aria-hidden="true"></i> <b>4.0 </b><span class="caret"></span></span>
+                        <br>
+                        <b style="color:#c45500"><i class="fa fa-inr" aria-hidden="true"></i> 786.00 </b>
+                        <br>
+                        <span style="font-size:13px">In Stock. Offered by XYZ.</span>
+                    </td>
+                    <td class="col-xs-3" style="text-align:center">
+                        <span style="font-size:13px">Added February 10, 2017</span>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary wishToCart">Add to Cart</button>
+                        <button class="btn btn-warning delete">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-3" >
+                        <img class="img img-responsive" src="img/bag3.jpg">
+                    </td>
+                    <td class="col-xs-6" style="text-align:center">
+                        <b style="color:#4595dc">WildCraft Bag 2</b>
+                        <br>
+                        <span><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:gold;" class="fa fa-star" aria-hidden="true"></i><i style="color:#ddd;" class="fa fa-star" aria-hidden="true"></i> <b>4.0 </b><span class="caret"></span></span>
+                        <br>
+                        <b style="color:#c45500"><i class="fa fa-inr" aria-hidden="true"></i> 986.00 </b>
+                        <br>
+                        <span style="font-size:13px">In Stock. Offered by XYZ.</span>
+                    </td>
+                    <td class="col-xs-3" style="text-align:center">
+                        <span style="font-size:13px">Added February 10, 2017</span>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary wishToCart">Add to Cart</button>
+                        <button class="btn btn-warning delete">Remove</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <br>
+        
+        <div style="border:1px solid #ddd; margin-right:15px; margin-left:15px;">
+        <div class="row">
+                <div class="col-md-12 col-md-offset-1">
+                    <br>
+                    <b style="font-size:17px;padding-left:6px">  Customers Who Bought Items in Your Wish List Also Bought</b>
+                    <hr style="margin-top:-1px">
+                </div>
+        </div>
+        
+        
+        <div class="row container" style="margin-top:-12px">
+            <div class="col-md-12 col-md-offset-1" style="align-content:center;padding:0px">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag3.jpg" style="margin-top:10px"><b>Bag1</b>
+                                </div>
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag4.jpg" style="margin-top:10px"><b>Bag2</b>
+                                </div>
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag1.jpg" style="margin-top:10px"><b>Bag3</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                               <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag3.jpg" style="margin-top:10px"><b>Bag1</b>
+                                </div>
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag4.jpg" style="margin-top:10px"><b>Bag2</b>
+                                </div>
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag1.jpg" style="margin-top:10px"><b>Bag3</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                           <div class="row">
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag3.jpg" style="margin-top:10px"><b>Bag1</b>
+                                </div>
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag4.jpg" style="margin-top:10px"><b>Bag2</b>
+                                </div>
+                                <div class="col-sm-4 col-xs-4" style="text-align:center">
+                                    <img class="img-responsive thumbnail" src="img/bag1.jpg" style="margin-top:10px"><b>Bag3</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    
+                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev" id="leftButton">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next" id="rightButton">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#one"><button style="width:100%;padding:5px 0px 5px 0px"><b>Back to Top</b></button></a>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <!--Include all compiled plugins (below), or include individual files as needed-->
+            
+        <script>
+            $(document).ready(function() {
+                if ($(window).width() >= 960) {
+                    $('#div1').addClass('col-md-2');
+                    $('#div2').addClass('navbar-right');
+                    $("#li1").addClass('col-md-push-2');
+                    $('#signin').addClass('col-md-push-6');
+                    $("#category1").css("margin-left","60px");
+                    $("#category2").css("padding-left","50px");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
+                }
+                else if($(window).width() >= 768){
+                    $('#div1').addClass('col-sm-12');
+                    $('#div1').css("padding-left","22px");
+                    $('#div2').addClass('navbar-left col-sm-pull-5');
+                    $('#signin').addClass('col-sm-2');
+                    $('#user').hide();
+                    $("#li1").addClass('col-sm-12');
+                    $("#signin").addClass('col-sm-2');
+                    $("#category1").css("margin-left","20px");
+                    $("#category2").css("padding-left","50px");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
+                    $("#createListModal").css("width","60%");
+                    $("#listSettingsModal").css("width","60%");
+                }
+                else
+                {
+                    $("#yourList").css("font-size","14px");
+                    $("#yourList").css("padding-left","2px");
+                    $("#createListModal").css("width","100%");
+                    $("#listSettingsModal").css("width","100%");
+                    $("#userWishList").css("font-size","14px");
+                    $("#userWishList").css("padding-left","2px");
+                }
+                
+                $("#createList").hover(function(){
+                    $(this).css("color","#e77600");
+                },function(){
+                    $(this).css("color","#337ab7");
+                });
+                $("#listSettings").hover(function(){
+                    $(this).css("color","#e77600");
+                },function(){
+                    $(this).css("color","#337ab7");
+                });
+                $("#filterAndSort").hover(function(){
+                    $(this).css("color","#e77600");
+                },function(){
+                    $(this).css("color","#337ab7");
+                });
+                $("td").css("background-color","white");
+            });
+        
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
