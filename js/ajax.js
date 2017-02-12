@@ -18,7 +18,7 @@ function createXmlHttpRequestObject(){
     }
 
     if(!xmlHttp)
-        alert("cant create that object");
+        alert("can't create that object");
     else
         return xmlHttp;
 }
@@ -34,9 +34,13 @@ $(document).ready(function() {
              {
                   var data = JSON.parse(xmlHttp.responseText);
                   var proName = "";
+                  var price = " ";
                   proName+= data[0].pname;
+                  price += data[0].price;
                   console.log(data[0]);
                   document.getElementById('pname').innerHTML=proName;
+                  document.getElementById('price').innerHTML=price;
+                  //$("#imgdynamic").attr('src','http://alfastudent.hopto.org:5566/alfastudent/images/pen1.jpg'); 
               }
               else
               {
