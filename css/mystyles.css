@@ -1,3 +1,4 @@
+/* To make page fit to the screen */
 html,body
 {
     width: 100%;
@@ -6,7 +7,7 @@ html,body
 }
 
 
-
+/* Custom Defined navbar-default class */
 .navbar-default {
     background: #5089e5;
     border-color: #2874f0;
@@ -15,7 +16,6 @@ html,body
 }
 
 /* search box */
-
 .button_box2 {
 margin:100px auto;
 }
@@ -121,6 +121,8 @@ border-right-color: #c42f2f;
 border: 0;
 padding: 0;
 }
+
+/* Login Modal */
 #loginModal
 {
     align-items: center;
@@ -129,57 +131,81 @@ padding: 0;
     width:60%;
     margin:auto;
 }
+
+/* Inside login Modal -> Insert mobile or email */
 #mobOrEmail
 {
     align-self: center;
 }
+
+/* For footer */ 
 .footer_text
 {
     background-color: #F5EEF8;
 }
+
+/* Custom defined image class for images */
 .image
 {
     
    padding:5px;
    border:1px solid #c7ccd6;
 }
+
+/* Star icon styling */
 #star1
 {
     border-color: white;
 }
+
+/* Changes in standard btn class */
 #btn
 {
     background: #ffe11b;
 }
+
+/* Icon bar */
 .icon-bar
 {
     background-color: white;
 }
+
+/* Carousel Background: For removing gray shading ar the sides */
 .carousel {
     background: white;
     
 }
+
+/* Carousel control buttons */
 .carousel-control.left, .carousel-control.right {
     background-image: none;
 }
+
+/* Items inside carousel */
 .carousel .item {
     height: 250px;
 }
+
+/* Positioning the carousel control button */
 .carousel-control{
     top: 50%;
     bottom: 50%;
 }
 
+/* Images inside item class */
 .item img {
     margin:auto;
     max-height:240px;
 }
+
+/* table */
 table {
     border-collapse: collapse;
     width: 100%;
     border-bottom-color: #ddd;
 }
 
+/* table data and table head */
 th,td {
     border-bottom-color: #b0b8c4;
 }
@@ -189,12 +215,15 @@ th, td {
     padding: 8px;
 }
 
+/* Alternate coloring to table in product page */
 td:nth-child(odd){background-color: #f2f2f2;}
 
+/* Table row */
 tr {
     border-color: #b0b8c4;
 }
 
+/* Add to cart modal */
 #addToCartModal
 {
     top:40%;
@@ -204,14 +233,17 @@ tr {
     text-align: center;
 }
 
+/* vertical line shading */
 .verticalLine {
   border-left: thick solid #ff0000;
 }
 
+/* Images under recommendation */
 .recommend img{
     margin:auto;
 }
 
+/* Add to cart modal */
 #addToCartModal1
 {
     top:40%;
@@ -221,6 +253,7 @@ tr {
     text-align: center;
 }
 
+/* dropdown btn */
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -262,9 +295,12 @@ tr {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: #5089e5;
 }
 
-.colorChange a:hover { color: #5089e5; text-decoration: underline; font-weight: none; }
+.colorChange a:hover { color: white; font-weight: 800; text-decoration: none}
+
+.colorChange { color:white }
 
 #createListModal {
     align-items: center;
@@ -281,3 +317,16 @@ tr {
     width:40%;
     margin:auto;
 }
+
+.hand {
+    cursor: pointer;
+}
+
+.hova {
+    border:2px solid #5089e5;
+}
+
+.bread {
+    max-height: 30px;
+}
+
