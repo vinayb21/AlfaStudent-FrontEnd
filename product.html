@@ -15,16 +15,19 @@
     
     <body>
         
-        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px" id="one">
+        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px">
             <div class="row">
                 <div class="navbar-header" id="div1">
                     <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
-                    <span ><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span style="background:white" class="icon-bar"></span>
-                        <span style="background:white" class="icon-bar"></span>
-                        <span style="background:white" class="icon-bar"></span>
-                    </button></span>
+                    
+                    
+                    <span><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span style="background:white" class="icon-bar"></span>
+                            <span style="background:white" class="icon-bar"></span>
+                            <span style="background:white" class="icon-bar"></span>
+                        </button>
+                    </span>
                 </div>  
                 <div id="navbar" class="navbar-collapse collapse" id="div2">
                     <ul class="nav navbar-nav">
@@ -39,35 +42,27 @@
                         </li>
                         <!-- Login Modal -->
                         <div id="loginModal" class="modal fade modal-admin" role="dialog" >
-                            <div class="modal-dialog">
-                            </div>
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Login</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="#" method="POST" class="form-inline">
-                                        <div class="form-group" style="padding:2px">
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
-                                                </div>
+                                        <div class="modal-dialog">
+                                        </div>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Login</h4>
                                             </div>
-                                            <br>
-                                            <div class="row">
-                                                <div class="col-xs-12" id="loginDiv">
-                                                <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
-                                                </div>
+                                            <div class="modal-body">
+                                                <form action="#" method="POST" class="form-inline">
+                                                    <div class="form-group" style="padding:2px">
+                                                        <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                                        <br>
+                                                        <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin">CONTINUE</button></span>
+                                                </form>
                                             </div>
                                         </div>
-                                        <br>
-                                        <br>
-                                        <span style="margin:auto" id="signin1"><button type="submit" class="btn btn-primary" value="Signin" style="border-radius:0">CONTINUE</button></span>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                                    </div>
                         <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white"><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
                             <ul class="dropdown-menu" style="background-color:#2874f0">
                                 <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
@@ -76,7 +71,9 @@
                                 <li role="separator" class="divider"></li>
                                 <li style="text-align:center"><span style="font-size:12px">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
                                 <li style="text-align:center"><a data-toggle="modal" data-target="#loginModal" id="login">
-                                    <button type="button" class="btn btn-default" style="background:#e40046;border-radius:0"><span style="color:white">Login</span></button></a></li>
+                                    <button type="button" class="btn btn-default" style="background:#e40046"><span style="color:white">Login</span></button></a></li>
+                                    
+                                
                             </ul>
                         </li>
                     </ul>
@@ -84,28 +81,28 @@
             </div>
             <div class="container" style="align-content:center;padding-top:-5px">
                 <ul class="nav navbar-nav">
-                   <li id="category1">
+                    <li id="category1">
                         <span style="font-size:15px;color:white;">
                             <div class="dropdown">
                               <span>BAGS <span class="caret"></span></span>
                               <div class="dropdown-content colorChange">
-                                <a href="#">College Bags</a>
-                                <a href="#">School Bags</a>
-                                <a href="#">Casual Bags</a>
-                                <a href="#">Laptop Bags</a>
+                                <a href="#" style="color:white">College Bags</a>
+                                <a href="#" style="color:white">School Bags</a>
+                                <a href="#" style="color:white">Casual Bags</a>
+                                <a href="#" style="color:white">Laptop Bags</a>
                               </div>
                             </div>
                         </span>
                     </li>
                     <li id="category2">
                         <span style="font-size:15px;color:white;">
-                            <div class="dropdown">
+                            <div class="dropdown ">
                               <span>BOOKS <span class="caret"></span></span>
                               <div class="dropdown-content colorChange">
-                                <a href="#">Mathematics</a>
-                                <a href="#">Physics</a>
-                                <a href="#">Chemistry</a>
-                                <a href="#">Biology</a>
+                                <a href="#" style="color:white">Mathematics</a>
+                                <a href="#" style="color:white">Physics</a>
+                                <a href="#" style="color:white">Chemistry</a>
+                                <a href="#" style="color:white">Biology</a>
                               </div>
                             </div>
                         </span>
@@ -115,10 +112,10 @@
                             <div class="dropdown">
                               <span>STATIONERY <span class="caret"></span></span>
                               <div class="dropdown-content colorChange">
-                                <a href="#">Pen &amp; Pencils</a>
-                                <a href="#">Markers</a>
-                                <a href="#">Paper Clips</a>
-                                <a href="#">Crayon Colours</a>
+                                <a href="#" style="color:white">Pen &amp; Pencils</a>
+                                <a href="#" style="color:white">Markers</a>
+                                <a href="#" style="color:white">Paper Clips</a>
+                                <a href="#" style="color:white">Crayon Colours</a>
                               </div>
                             </div>
                         </span>
@@ -128,10 +125,10 @@
                             <div class="dropdown">
                               <span>FURNITURE <span class="caret"></span></span>
                               <div class="dropdown-content colorChange">
-                                <a href="#">Study Table</a>
-                                <a href="#">Bookshelves</a>
-                                <a href="#">Table Lamp</a>
-                                <a href="#">Chair</a>
+                                <a href="#" style="color:white">Study Table</a>
+                                <a href="#" style="color:white">Bookshelves</a>
+                                <a href="#" style="color:white">Table Lamp</a>
+                                <a href="#" style="color:white">Chair</a>
                               </div>
                             </div>
                         </span>
@@ -141,10 +138,10 @@
                             <div class="dropdown">
                               <span>SPORTS ACCESSORIES <span class="caret"></span></span>
                               <div class="dropdown-content colorChange">
-                                <a href="#">Cricket Kit</a>
-                                <a href="#">Basketball</a>
-                                <a href="#">Volleyball &amp; Net</a>
-                                <a href="#">Badminton &amp; Tennis</a>
+                                <a href="#" style="color:white">Cricket Kit</a>
+                                <a href="#" style="color:white">Basketball</a>
+                                <a href="#" style="color:white">Volleyball &amp; Net</a>
+                                <a href="#" style="color:white">Badminton &amp; Tennis</a>
                               </div>
                             </div>
                         </span>
@@ -154,8 +151,8 @@
                             <div class="dropdown">
                               <span>UNIFORM <span class="caret"></span></span>
                               <div class="dropdown-content colorChange">
-                                <a href="#" style="text-align:center">Sports Uniform &amp; Shoes</a>
-                                <a href="#" style="text-align:center">Daily Uniform &amp; Shoes</a>
+                                <a href="#" style="text-align:center;color:white">Sports Uniform &amp; Shoes</a>
+                                <a href="#" style="text-align:center;color:white">Daily Uniform &amp; Shoes</a>
                               </div>
                             </div>
                         </span>
@@ -165,9 +162,9 @@
                             <div class="dropdown">
                               <span>EDUCATIONAL TOYS <span class="caret"></span></span>
                               <div class="dropdown-content colorChange">
-                                <a href="#">Chemistry Kit</a>
-                                <a href="#">Science Games</a>
-                                <a href="#">Counting Games</a>
+                                <a href="#" style="color:white">Chemistry Kit</a>
+                                <a href="#" style="color:white">Science Games</a>
+                                <a href="#" style="color:white">Counting Games</a>
                               </div>
                             </div>
                         </span>
@@ -176,12 +173,12 @@
             </div>
         </nav>
         
-        <div>
-            <ol class="breadcrumb" style="margin-top:-20px">
-                <li style="padding:0px 0px 0px 5px">Root </li>
-                <li style="padding:0px 0px 0px 5px">Branch1 </li>
-                <li style="padding:0px 0px 0px 5px">Branch2 </li>
-                <li class="active" style="padding:0px 0px 0px 5px"><a href="#">Leaf</a></li>
+        <div style="padding-bottom:12px">
+            <ol class="breadcrumb bread" style="border-radius:0;margin-top:-20px;">
+                <li style="padding:0px 0px 2px 5px; bottom:100%"><span style="font-size:12px;color:grey;">Root</span> </li>
+                <li style="padding:0px 0px 2px 5px;"><span style="font-size:12px;color:grey">Branch1</span>  </li>
+                <li style="padding:0px 0px 2px 5px;"><span style="font-size:12px;color:grey">Branch2</span> </li>
+                <li class="active" style="padding:0px 0px 2px 5px;"><a href="#"><span style="font-size:12px">Leaf</span> </a></li>
             </ol>
         </div>
         
@@ -269,50 +266,50 @@
                         <div class="item active">
                             <div class="row">
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/cover.jpg" style="margin-top:10px">Cover
+                                    <img class="img-responsive thumbnail highlight" src="img/cover.jpg" style="margin-top:10px">Cover
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/glass.jpg" style="margin-top:10px">Tempered glass
+                                    <img class="img-responsive thumbnail highlight" src="img/glass.jpg" style="margin-top:10px">Tempered glass
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/backcover.jpg" style="margin-top:10px">Backcover
+                                    <img class="img-responsive thumbnail highlight" src="img/backcover.jpg" style="margin-top:10px">Backcover
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/cover.jpg" style="margin-top:10px">Cover
+                                    <img class="img-responsive thumbnail highlight" src="img/cover.jpg" style="margin-top:10px">Cover
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/glass.jpg" style="margin-top:10px">Tempered glass
+                                    <img class="img-responsive thumbnail highlight" src="img/glass.jpg" style="margin-top:10px">Tempered glass
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/backcover.jpg" style="margin-top:10px">Backcover
+                                    <img class="img-responsive thumbnail highlight" src="img/backcover.jpg" style="margin-top:10px">Backcover
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                            <div class="row">
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/cover.jpg" style="margin-top:10px">Cover
+                                    <img class="img-responsive thumbnail highlight" src="img/cover.jpg" style="margin-top:10px">Cover
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/glass.jpg" style="margin-top:10px">Tempered glass
+                                    <img class="img-responsive thumbnail highlight" src="img/glass.jpg" style="margin-top:10px">Tempered glass
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/backcover.jpg" style="margin-top:10px">Backcover
+                                    <img class="img-responsive thumbnail highlight" src="img/backcover.jpg" style="margin-top:10px">Backcover
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Controls -->
                     
-                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev" id="leftButton">
+                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev" id="leftButton11" style="color:gray">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next" id="rightButton">
+                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next" id="rightButton11" style="color:gray">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -338,50 +335,50 @@
                         <div class="item active">
                             <div class="row">
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob1.jpg" style="margin-top:10px">Nokia Lumia
+                                    <img class="img-responsive thumbnail highlight" src="img/mob1.jpg" style="margin-top:10px">Nokia Lumia
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob2.jpg" style="margin-top:10px">China Mobile
+                                    <img class="img-responsive thumbnail highlight" src="img/mob2.jpg" style="margin-top:10px">China Mobile
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob3.jpeg" style="margin-top:10px">Google Pixel
+                                    <img class="img-responsive thumbnail highlight" src="img/mob4" style="margin-top:10px">Google Pixel
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob1.jpg" style="margin-top:10px">Nokia Lumia
+                                    <img class="img-responsive thumbnail highlight" src="img/mob1.jpg" style="margin-top:10px">Nokia Lumia
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob2.jpg" style="margin-top:10px">China Mobile
+                                    <img class="img-responsive thumbnail highlight" src="img/mob2.jpg" style="margin-top:10px">China Mobile
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob3.jpeg" style="margin-top:10px">Google Pixel
+                                    <img class="img-responsive thumbnail highlight" src="img/mob4" style="margin-top:10px">Google Pixel
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                            <div class="row">
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob1.jpg" style="margin-top:10px">Nokia Lumia
+                                    <img class="img-responsive thumbnail highlight" src="img/mob1.jpg" style="margin-top:10px">Nokia Lumia
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob2.jpg" style="margin-top:10px">China Mobile
+                                    <img class="img-responsive thumbnail highlight" src="img/mob2.jpg" style="margin-top:10px">China Mobile
                                 </div>
                                 <div class="col-sm-4 col-xs-4" style="text-align:center">
-                                    <img class="img-responsive thumbnail" src="img/mob3.jpeg" style="margin-top:10px">Google Pixel
+                                    <img class="img-responsive thumbnail highlight" src="img/mob4" style="margin-top:10px">Google Pixel
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Controls -->
                     
-                    <a class="left carousel-control" href="#mycarousel1" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#mycarousel1" role="button" data-slide="prev" id="leftButton12" style="color:gray">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#mycarousel1" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#mycarousel1" role="button" data-slide="next" id="rightButton12" style="color:gray">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -558,6 +555,11 @@
                     $("#category5").css("padding-left","50px");
                     $("#category6").css("padding-left","50px");
                     $("#category7").css("padding-left","50px");
+                    $("#leftButton11").css("margin-left","-60px");
+                    $("#rightButton11").css("margin-right","-60px");
+                    $("#leftButton12").css("margin-left","-60px");
+                    $("#rightButton12").css("margin-right","-60px");
+                    $("#imgdynamic").css("max-height","600px")
                     
                 }
                 else if($(window).width() >= 768){
@@ -580,7 +582,10 @@
                     $("#category5").css("padding-left","50px");
                     $("#category6").css("padding-left","50px");
                     $("#category7").css("padding-left","50px");
-                    
+                    $("#leftButton11").css("margin-left","-15px");
+                    $("#rightButton11").css("margin-right","-15px");
+                    $("#leftButton12").css("margin-left","-15px");
+                    $("#rightButton12").css("margin-right","-15px");
                 }
                 else
                 {
@@ -622,6 +627,15 @@
                   $('#imgdynamic').attr('src','img/phab14.jpg');
                }
             );
+            
+            $('.highlight').mouseover(function(e){
+                    $(".hova").removeClass("hova");     
+                    $(e.target).addClass("hova");
+                  return false;
+                }).mouseout(function(e) {
+                    $(this).removeClass("hova");
+                });    
+                
             
             });
         
