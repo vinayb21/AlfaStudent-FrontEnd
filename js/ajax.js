@@ -27,25 +27,46 @@ function createXmlHttpRequestObject(){
 
 
 $(document).ready(function() {
+    
+    var pid;
+    
+    var queryString = new Array();
+    $(function () {
+        if (queryString.length == 0) {
+            if (window.location.search.split('?').length > 1) {
+                var params = window.location.search.split('?')[1].split('&');
+                for (var i = 0; i < params.length; i++) {
+                    var key = params[i].split('=')[0];
+                    var value = decodeURIComponent(params[i].split('=')[1]);
+                    queryString[key] = value;
+                }
+            }
+        }
+        if (queryString["pid"] != null) {
+            pid = queryString["pid"]-200; 
+            //alert(pid);
+        }
+    });
+    
     if(xmlHttp.readyState==0 || xmlHttp.readyState==4){
         xmlHttp.onreadystatechange =function (){
             if(xmlHttp.readyState==4){
         	   if( xmlHttp.status==200)
-             {
+               {
                   var data = JSON.parse(xmlHttp.responseText);
                   var proName = "";
                   var price = " ";
-                  proName+= data[0].pname;
-                  price += data[0].price;
-                  console.log(data[0]);
+                  proName+= data[pid].pname;
+                  price += data[pid].price;
+                  console.log(data[pid]);
                   document.getElementById('pname').innerHTML=proName;
                   document.getElementById('price').innerHTML=price;
                   //$("#imgdynamic").attr('src','http://alfastudent.hopto.org:5566/alfastudent/images/pen1.jpg'); 
-              }
-              else
-              {
+               }
+               else
+               {
                   alert('Something went wrong!');
-              }
+               }
         	}
         };
         xmlHttp.open("GET", "http://alfastudent.hopto.org:5566/alfastudent/rest/productService/products/", true);

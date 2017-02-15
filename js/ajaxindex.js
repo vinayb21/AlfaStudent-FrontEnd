@@ -43,7 +43,8 @@ $(document).ready(function() {
                 price2 = data[1].price;
                 price3 = data[2].price;
                 price4 = data[3].price;
-                
+            
+                 
                   //console.log(data[0]);
                 document.getElementById('proName1').innerHTML=proName1;
                 document.getElementById('pro1Price').innerHTML=price1;
