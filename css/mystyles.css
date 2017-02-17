@@ -330,3 +330,27 @@ tr {
     max-height: 30px;
 }
 
+/* Wishlist Modal */
+#addToWishlistModal
+{
+    top:40%;
+    width:50%;
+    margin:auto;
+    border-radius: 0%;
+    text-align: center;
+}
+
+.navbar .dropdown-toggle:active, .open .dropdown-toggle {
+    background:#5089e5 !important; 
+    color:white !important;
+}
+            
+
+.navbar .dropdown-menu > li > a:hover {
+    background-color: #094fbf;
+    background-image: none;
+}
+
+.nav li, .navbar-header, #filterAndSort {
+    cursor: pointer;
+}
