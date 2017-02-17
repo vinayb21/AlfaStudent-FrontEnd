@@ -15,7 +15,7 @@
     
     <body>
         
-        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px">
+        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px" id="one">
             <div class="row">
                 <div class="navbar-header" id="div1">
                     <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
@@ -45,9 +45,9 @@
                                         <div class="modal-dialog">
                                         </div>
                                         <div class="modal-content">
-                                            <div class="modal-header">
+                                            <div class="modal-header" style="background-color:#5089e5">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Login</h4>
+                                                <h4 class="modal-title"><span style="color:white">LOGIN</span></h4>
                                             </div>
                                             <div class="modal-body">
                                                 <form action="#" method="POST" class="form-inline">
@@ -63,17 +63,24 @@
                                             </div>
                                         </div>
                                     </div>
-                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white"><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
+                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" id="signInBlock" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white" ><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
                             <ul class="dropdown-menu" style="background-color:#2874f0">
                                 <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
                                 <li><a href="#"><span style="color:white"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Your Orders</span></a></li>
                                 <li><a href="#"><span style="color:white"><i class="fa fa-heart" aria-hidden="true"></i>  Shortlists</span></a></li>
                                 <li role="separator" class="divider"></li>
-                                <li style="text-align:center"><span style="font-size:12px">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
-                                <li style="text-align:center"><a data-toggle="modal" data-target="#loginModal" id="login">
-                                    <button type="button" class="btn btn-default" style="background:#e40046"><span style="color:white">Login</span></button></a></li>
-                                    
-                                
+                                <li  style="text-align:center"><span style="font-size:12px;color:#dddddd">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
+                                <li style="text-align:center;display:inline-block;text-align:center">
+                                    <span style="padding-left:13px">
+                                        <button data-toggle="modal" data-target="#loginModal" id="login" type="button" class="btn btn-default" style="background:#db3463;border-radius:0%">
+                                            <span style="color:white">Login</span>
+                                        </button> 
+                                        <span style="padding-left:3px"></span>
+                                        <button id="signinCart" type="button" class="btn btn-default" style="background:#efaf00;border-radius:0%">
+                                            <span style="color:white;padding-left:6px;padding-right:6px"> Cart </span>
+                                        </button>
+                                    </span>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -210,6 +217,11 @@
                 {
                     ;
                 }
+                
+                $("#signin").on("click",function() {
+                    $("#signin").css("background-color");
+               });
+                
             });
         
         </script>
