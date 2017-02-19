@@ -318,7 +318,7 @@ tr {
     margin:auto;
 }
 
-.hand {
+.hand{
     cursor: pointer;
 }
 
@@ -353,4 +353,13 @@ tr {
 
 .nav li, .navbar-header, #filterAndSort {
     cursor: pointer;
+}
+
+#toggleBtn {
+    background-color: #5089e5;
+    background-image: none;
+}
+
+#cartBtn {
+    clear: both;
 }
