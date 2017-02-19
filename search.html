@@ -21,7 +21,7 @@
                     <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
                     
                     
-                    <span><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar" id="toggleBtn">
                             <span class="sr-only">Toggle Navigation</span>
                             <span style="background:white" class="icon-bar"></span>
                             <span style="background:white" class="icon-bar"></span>
@@ -30,7 +30,7 @@
                     </span>
                 </div>  
                 <div id="navbar" class="navbar-collapse collapse" id="div2">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" style="padding-left:0%">
                         <li class="col-xs-12 col-md-9" id="li1"><form class="navbar-form" role="search">
                             <div class="input-group" style="padding:2px">
                                 <input id="searchinput" type="text" class="form-control" placeholder="Search for stationery products" size="60" name="q">
@@ -40,46 +40,45 @@
                             </div>
                             </form>
                         </li>
+                        <li style="padding-top:10px" id="signinCart">
+                            <button id="cartBtn" type="button" class="btn" style="background-color:#094fbf;border-radius:0%">
+                                <span style="color:white;padding-left:6px;padding-right:6px"><b style="color:white;font-size:14px"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span style="padding-left:3px">CART </span><span style="padding-left:3px">&#40;0&#41;</span> </b></span>
+                            </button>
+                        </li>
                         <!-- Login Modal -->
                         <div id="loginModal" class="modal fade modal-admin" role="dialog" >
-                                        <div class="modal-dialog">
+                            <div class="modal-dialog">
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color:#5089e5">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"><span style="color:white">LOGIN</span></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#" method="POST" class="form-inline">
+                                        <div class="form-group" style="padding:2px">
+                                            <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                            <br>
+                                            <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
                                         </div>
-                                        <div class="modal-content">
-                                            <div class="modal-header" style="background-color:#5089e5">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title"><span style="color:white">LOGIN</span></h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form action="#" method="POST" class="form-inline">
-                                                    <div class="form-group" style="padding:2px">
-                                                        <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
-                                                        <br>
-                                                        <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
-                                                    </div>
-                                                    <br>
-                                                    <br>
-                                                    <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin">CONTINUE</button></span>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" id="signInBlock" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white" ><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
+                                        <br>
+                                        <br>
+                                        <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin">CONTINUE</button></span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <li id="signin" class="col-xs-12 col-md-3"><a href="#" id="signInBlock" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white" ><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
                             <ul class="dropdown-menu" style="background-color:#2874f0">
                                 <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
                                 <li><a href="#"><span style="color:white"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Your Orders</span></a></li>
                                 <li><a href="#"><span style="color:white"><i class="fa fa-heart" aria-hidden="true"></i>  Shortlists</span></a></li>
                                 <li role="separator" class="divider"></li>
                                 <li  style="text-align:center"><span style="font-size:12px;color:#dddddd">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
-                                <li style="text-align:center;display:inline-block;text-align:center">
-                                    <span style="padding-left:13px">
-                                        <button data-toggle="modal" data-target="#loginModal" id="login" type="button" class="btn btn-default" style="background:#db3463;border-radius:0%">
-                                            <span style="color:white">Login</span>
-                                        </button> 
-                                        <span style="padding-left:3px"></span>
-                                        <button id="signinCart" type="button" class="btn btn-default" style="background:#efaf00;border-radius:0%">
-                                            <span style="color:white;padding-left:6px;padding-right:6px"> Cart </span>
-                                        </button>
-                                    </span>
+                                <li style="text-align:center;">
+                                    <button data-toggle="modal" data-target="#loginModal" id="login" type="button" class="btn btn-default" style="background:#db3463;border-radius:0%">
+                                        <span style="color:white">Login</span>
+                                    </button> 
                                 </li>
                             </ul>
                         </li>
@@ -311,10 +310,12 @@
         <script>
             $(document).ready(function() {
                 if ($(window).width() >= 960) {
-                    $('#div1').addClass('col-md-2');
-                    $('#div2').addClass('navbar-right');
-                    $("#li1").addClass('col-md-push-2');
+                    //$('#div1').addClass('col-md-2');
+                    //$('#div2').addClass('navbar-right');
+                    $("#li1").addClass('col-md-push-3');
+                    $("#signinCart").addClass('col-md-push-4');
                     $('#signin').addClass('col-md-push-6');
+                    $('#signin').css("margin-top","-40px");
                     $("#category1").css("margin-left","60px");
                     $("#category2").css("padding-left","50px");
                     $("#filterHead").css("padding-left","10%");
@@ -407,6 +408,7 @@
                     $("#popularity").css("color","black");
                     $("#pricel2h").css("color","black");
                     $("#relevance").css("color","black");
+                    $("#signinCart").css("padding-left","30px");
                 });
                 // subcategories toggle
                 $( "#cat1" ).click(function() {     
@@ -514,6 +516,10 @@
                   return false;
                 }).mouseout(function(e) {
                     $(this).removeClass("hova");
+                });
+                
+                $('#cartBtn').click(function(){
+                   window.location.href='cart.html';
                 });
                 
             });
