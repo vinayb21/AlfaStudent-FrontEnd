@@ -363,3 +363,8 @@ tr {
 #cartBtn {
     clear: both;
 }
+
+#relevance, #popularity, #pricel2h, #priceh2l
+{
+    cursor: pointer;
+}
