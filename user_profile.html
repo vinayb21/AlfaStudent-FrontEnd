@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Alfa Student</title>
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px" id="one">
+            <div class="row">
+                <div class="navbar-header" id="div1">
+                    <a class="navbar-brand" href="#"><span style="color:white;padding:0px 0px 0px 10px"><b><i style="font-size:20px">AlfaStudent</i></b></span></a>
+                    
+                    
+                    <span><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar" id="toggleBtn">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span style="background:white" class="icon-bar"></span>
+                            <span style="background:white" class="icon-bar"></span>
+                            <span style="background:white" class="icon-bar"></span>
+                        </button>
+                    </span>
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse" id="div2">
+                    <ul class="nav navbar-nav">
+                        <li class="col-xs-12 col-md-9" id="li1"><form class="navbar-form" role="search">
+                            <div class="input-group" style="padding:2px">
+                                <input id="searchinput" type="text" class="form-control" placeholder="Search for stationery products" size="60" name="q">
+                                <div class="input-group-btn">
+                                    <button id="btn" class="btn btn-default" style="padding:10px 10px 2px 10px" type="submit"><span style="color:black"><i class="glyphicon glyphicon-search" ></i></span></button>
+                                </div>
+                            </div>
+                            </form>
+                        </li>
+                        <!-- Login Modal -->
+                        <div id="loginModal" class="modal fade modal-admin" role="dialog" >
+                            <div class="modal-dialog">
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color:#5089e5">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"><span style="color:white">LOGIN</span></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#" method="POST" class="form-inline">
+                                        <div class="form-group" style="padding:2px">
+                                            <span style="font-size:12px">Please provide your Mobile Number or Email to Login/ Sign Up on Alfastudent</span>
+                                            <br>
+                                            <input type="text" class="form-control col-xs-10 col-md-push-3" id="mobOrEmail" placeholder="Mobile Number/ Email" name="Name">
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <span style="padding:0px 0px 0px 10px"><button type="submit" class="btn btn-primary" value="Signin">CONTINUE</button></span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <li id="signin" class="dropdown col-xs-12 col-md-3"><a href="#" id="signInBlock" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white" ><span style="font-size:15px">Sign In<span style="padding-left:6px"><i id="user" class="fa fa-user-circle" aria-hidden="true"></i></span></span></a>
+                            <ul class="dropdown-menu" style="background-color:#2874f0">
+                                <li><a href="#"><span style="color:white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Your Account</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Your Orders</span></a></li>
+                                <li><a href="#"><span style="color:white"><i class="fa fa-heart" aria-hidden="true"></i>  Shortlists</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li  style="text-align:center"><span style="font-size:12px;color:#dddddd">If you are a new user</span><br><a href="#"><span style="color:white"> Register </span></a></li>
+                                <li style="text-align:center;display:inline-block;text-align:center">
+                                    <span style="padding-left:13px">
+                                        <button data-toggle="modal" data-target="#loginModal" id="login" type="button" class="btn btn-default" style="background:#db3463;border-radius:0%">
+                                            <span style="color:white">Login</span>
+                                        </button> 
+                                        <span style="padding-left:3px"></span>
+                                        <button id="signinCart" type="button" class="btn btn-default" style="background:#efaf00;border-radius:0%">
+                                            <span style="color:white;padding-left:6px;padding-right:6px"> Cart </span>
+                                        </button>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" style="align-content:center;padding-top:-5px">
+                <ul class="nav navbar-nav">
+                    <li id="category1">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>BAGS <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="color:white">College Bags</a>
+                                <a href="#" style="color:white">School Bags</a>
+                                <a href="#" style="color:white">Casual Bags</a>
+                                <a href="#" style="color:white">Laptop Bags</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category2">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown ">
+                              <span>BOOKS <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="color:white">Mathematics</a>
+                                <a href="#" style="color:white">Physics</a>
+                                <a href="#" style="color:white">Chemistry</a>
+                                <a href="#" style="color:white">Biology</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category3">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>STATIONERY <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="color:white">Pen &amp; Pencils</a>
+                                <a href="#" style="color:white">Markers</a>
+                                <a href="#" style="color:white">Paper Clips</a>
+                                <a href="#" style="color:white">Crayon Colours</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category4">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>FURNITURE <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="color:white">Study Table</a>
+                                <a href="#" style="color:white">Bookshelves</a>
+                                <a href="#" style="color:white">Table Lamp</a>
+                                <a href="#" style="color:white">Chair</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category5">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>SPORTS ACCESSORIES <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="color:white">Cricket Kit</a>
+                                <a href="#" style="color:white">Basketball</a>
+                                <a href="#" style="color:white">Volleyball &amp; Net</a>
+                                <a href="#" style="color:white">Badminton &amp; Tennis</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category6">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>UNIFORM <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="text-align:center;color:white">Sports Uniform &amp; Shoes</a>
+                                <a href="#" style="text-align:center;color:white">Daily Uniform &amp; Shoes</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                    <li id="category7">
+                        <span style="font-size:15px;color:white;">
+                            <div class="dropdown">
+                              <span>EDUCATIONAL TOYS <span class="caret"></span></span>
+                              <div class="dropdown-content colorChange">
+                                <a href="#" style="color:white">Chemistry Kit</a>
+                                <a href="#" style="color:white">Science Games</a>
+                                <a href="#" style="color:white">Counting Games</a>
+                              </div>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <!--Include all compiled plugins (below), or include individual files as needed-->
+            
+        <script>
+            $(document).ready(function() {
+                if ($(window).width() >= 960) {
+                    $('#div1').addClass('col-md-2');
+                    $('#div2').addClass('navbar-right');
+                    $("#li1").addClass('col-md-push-2');
+                    $('#signin').addClass('col-md-push-6');
+                    $("#category1").css("margin-left","60px");
+                    $("#category2").css("padding-left","50px");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
+                }
+                else if($(window).width() >= 768){
+                    $('#div1').addClass('col-sm-12');
+                    $('#div1').css("padding-left","22px");
+                    $('#div2').addClass('navbar-left col-sm-pull-5');
+                    $('#signin').addClass('col-sm-2');
+                    $('#user').hide();
+                    $("#li1").addClass('col-sm-12');
+                    $("#signin").addClass('col-sm-2');
+                    $("#category1").css("margin-left","20px");
+                    $("#category2").css("padding-left","50px");
+                    $("#category3").css("padding-left","50px");
+                    $("#category4").css("padding-left","50px");
+                    $("#category5").css("padding-left","50px");
+                    $("#category6").css("padding-left","50px");
+                    $("#category7").css("padding-left","50px");
+                }
+                else
+                {
+                    ;
+                }
+                
+                $("#signin").on("click",function() {
+                    $("#signin").css("background-color");
+               });
+                
+            });
+        
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

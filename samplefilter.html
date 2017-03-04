@@ -1,0 +1,51 @@
+<!-- Adding filters to directives -->
+
+<!-- Filters are added to directives, like ng-repeat, by using the pipe character |, followerd by a filter -->
+
+<!DOCTYPE html>
+<html>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <body>
+        
+        <div ng-app="myApp" ng-controller="namesCtrl">
+            <ul>
+                <li ng-click="orderByMe('-price')">Price high to low</li>
+                <li ng-click="orderByMe('price')">Price low to high</li>
+                <li ng-click="orderByMe('popularity')">Popularity</li>
+                <li ng-click="orderByMe('popularity')">Relevance</li>
+            </ul>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Proname</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Subcategory</th>
+                    <th>Popularity</th>
+                </tr>
+                <tr ng-repeat="x in names | orderBy:myOrderBy">
+                    <td>{{ x.proname }}</td>
+                    <td>{{ x.price }}</td>
+                    <td>{{ x.category }}</td>
+                    <td>{{ x.subcategory }}</td>
+                    <td>{{ x.popularity }}</td>
+                </tr>
+            </table>
+        </div>
+        
+        <script>
+            var app = angular.module('myApp',[]);
+            app.controller('namesCtrl',function($scope){
+               $scope.names = [
+                   {proname:'pro1',price:99,category:'Bags',subcategory:'CollegeBags',popularity:5},
+                   {proname:'pro2',price:199,category:'Bags',subcategory:'SchoolBags',popularity:12},
+                   {proname:'pro3',price:299,category:'Bags',subcategory:'CasualBags',popularity:3},
+                   {proname:'pro4',price:399,category:'Bags',subcategory:'LaptopBags',popularity:50}
+               ]; 
+            
+            $scope.orderByMe = function(x) {
+                    $scope.myOrderBy = x;
+                }
+            });
+        </script>
+    </body>
+</html>
