@@ -10,10 +10,11 @@
         <link href="css/bootstrap-social.css" rel="stylesheet">
         <link href="css/mystyles.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <title>Alfa Student</title>
     </head>
     
-    <body onResize="resizeWindow()">
+    <body onResize="resizeWindow()" ng-app="filterApp" ng-controller="filterCtrl">
         
         <nav class="navbar navbar-default responsive" role="navigation" style="padding:5px" id="one">
             <div class="row">
@@ -217,7 +218,7 @@
             
             <div class="col-xs-12 col-sm-10">
                 <div id="sort">
-                <b style="font-size:15px;">Sort By</b><span style="font-family:Arial;padding:0px 12px 0px 12px" id="relevance">Relevance</span><span id="popularity" style="font-family:Arial;padding:0px 12px 0px 0px">Popularity</span><span id="pricel2h" style="font-family:Arial;padding:0px 12px 0px 0px">Price - Low to High</span><span id="priceh2l" style="font-family:Arial;">Price - High to Low</span>
+                <b style="font-size:15px;">Sort By</b><span style="font-family:Arial;padding:0px 12px 0px 12px" id="relevance" ng-click="orderByMe('popularity')">Relevance</span><span id="popularity" style="font-family:Arial;padding:0px 12px 0px 0px" ng-click="orderByMe('popularity')">Popularity</span><span id="pricel2h" style="font-family:Arial;padding:0px 12px 0px 0px" ng-click="orderByMe('discPrice')">Price - Low to High</span><span id="priceh2l" style="font-family:Arial;" ng-click="orderByMe('-discPrice')">Price - High to Low</span>
                 </div>
                 <hr style="margin-top:4px">
                 <div class="row" style="text-align:center">
@@ -225,63 +226,18 @@
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-xs-4 col-sm-3">
-                        <img src="img/bag1.jpg" class="img-responsive image2 highlight">
+                    <div class="col-xs-4 col-sm-3" ng-repeat="x in result | orderBy:myOrderBy">
+                        <img src="{{ x.img }}" class="img-responsive image2 highlight">
                         <div class="row" style="padding-left:30%">
-                            F Gear Axe 1<br>
+                            {{x.proName}}<br>
                         </div>
                         <div class="row" style="padding-left:36%;padding-top:2%">
-                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">4.1  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
+                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">{{x.rating}}  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
                         </div>
                         <div class="row" style="padding-left:21%;padding-top:3%">
-                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 599 </span><strike style="color:grey">2499</strike> <span style="color:#388e3c;font-size:12px">  76% off</span>
+                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> {{x.discPrice}} </span><strike style="color:grey">{{x.orgPrice}}</strike> <span style="color:#388e3c;font-size:12px">  {{ x.disc}}% off</span>
                         </div>
                         <div class="row" style="padding-left:15%">
-                            <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <img src="img/bag2.jpg" class="img-responsive image2 highlight">
-                        <div class="row" style="text-align:center">
-                            F Gear Axe 2<br>
-                        </div>
-                        <div class="row" style="text-align:center;padding-top:2%">
-                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">3.8  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="row" style="text-align:center;padding-top:3%">
-                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 828 </span><strike style="color:grey">2299</strike> <span style="color:#388e3c;font-size:12px">  63% off</span>
-                        </div>
-                        <div class="row" style="text-align:center">
-                            <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <img src="img/bag3.jpg" class="img-responsive image2 highlight">
-                        <div class="row" style="text-align:center">
-                            F Gear Axe 3<br>
-                        </div>
-                        <div class="row" style="text-align:center;padding-top:2%">
-                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">4.4  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="row" style="text-align:center;padding-top:3%">
-                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 1721 </span><strike style="color:grey">3449</strike> <span style="color:#388e3c;font-size:12px">  50% off</span>
-                        </div>
-                        <div class="row" style="text-align:center">
-                            <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-3">
-                        <img src="img/bag4.jpg" class="img-responsive image2 highlight">
-                        <div class="row" style="text-align:center">
-                            F Gear Axe 4<br>
-                        </div>
-                        <div class="row" style="text-align:center;padding-top:2%">
-                            <span class="label label-success" style="padding:5px;"><span style="font-size:15px">4.3  </span><i id="star1" class="fa fa-star" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="row" style="text-align:center;padding-top:3%">
-                            <span style="font-size:16px;font-weight:600"><i class="fa fa-inr" aria-hidden="true"></i> 473 </span><strike style="color:grey">1050</strike> <span style="color:#388e3c;font-size:12px">  54% off</span>
-                        </div>
-                        <div class="row" style="text-align:center">
                             <span style="color:#5089e5;font-weight:700">See Similar Products <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                         </div>
                     </div>
@@ -505,7 +461,7 @@
                     else
                     {
                         $('#subcat7').show();       
-                        $('#flag71').hide();
+                        $('#flag71').hide();y
                         $('#flag72').show();
                     }
                 });
@@ -521,11 +477,26 @@
                 $('#cartBtn').click(function(){
                    window.location.href='cart.html';
                 });
-                
             });
             
             
         
+        </script>
+        <script>
+            
+                var app = angular.module('filterApp',[]);
+                app.controller('filterCtrl',function($scope){
+                    $scope.result = [
+                       {proName:'F Gear Axe 1',discPrice:599,orgPrice:2499,category:'Bags',subcategory:'CollegeBags',popularity:5,rating:"4.1",disc:"76",img:"img/bag1.jpg"},
+                       {proName:'F Gear Axe 2',discPrice:828,orgPrice:2299,category:'Bags',subcategory:'SchoolBags',popularity:12,rating:"4.1",disc:"63",img:"img/bag2.jpg"},
+                       {proName:'F Gear Axe 3',discPrice:1721,orgPrice:3449,category:'Bags',subcategory:'CasualBags',popularity:3,rating:"4.1",disc:"50",img:"img/bag3.jpg"},
+                       {proName:'F Gear Axe 4',discPrice:473,orgPrice:1050,category:'Bags',subcategory:'LaptopBags',popularity:50,rating:"4.1",disc:"54",img:"img/bag4.jpg"}
+                       ];     
+                     $scope.orderByMe = function(x) {
+                        $scope.myOrderBy = x;
+                    }
+                    });
+                 
         </script>
         <script src="js/bootstrap.min.js"></script>
     </body>
