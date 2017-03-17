@@ -326,6 +326,10 @@ tr {
     border:2px solid #5089e5;
 }
 
+.hova1 {
+    border: 1px solid gray;
+}
+
 .bread {
     max-height: 30px;
 }
