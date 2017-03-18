@@ -14,7 +14,7 @@
         <title>Alfa Student</title>
     </head>
     
-    <body ng-app="productPage" ng-controller="productPageCtrl">
+    <body ng-app="productPage" ng-controller="productPageCtrl" id="one">
         <div ng-include="'navbarTemplate.html'"></div>
         
         <div style="padding-bottom:12px">
@@ -255,7 +255,7 @@
             <hr style="margin-top:-1px">
             <span style="color:#a1a7af;font-size:15px">Color<span style="padding-left:25px;padding-top:10px"></span></span>
             <br>
-            Product Description goes here
+            <p id="proDesc"></p>
         </div>
         <br>
         <br>
@@ -514,7 +514,7 @@
         
             
         </script>
-        <script src="js/ajax.js"></script>
+        <script src="js/ajaxProduct.js"></script>
         <script src="js/navbarJQuery.js"></script>
         <script>
             var app = angular.module("productPage",[]);
