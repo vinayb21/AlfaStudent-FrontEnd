@@ -39,6 +39,8 @@ var load = function() {
     $('#cartBtn').click(function(){
         window.location.href='cart.html';
     });
+    
+    $('.myone').attr("id","one");
 
 }
 

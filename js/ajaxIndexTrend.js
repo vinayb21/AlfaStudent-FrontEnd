@@ -43,7 +43,7 @@ $(document).ready(function() {
                         $('.pro'+i+' .proPrice').html(data[i-1].price);
                         
                     }
-
+                    console.log(data[0]);
                }
               else
               {
@@ -51,7 +51,7 @@ $(document).ready(function() {
               }
         	}
         };
-        xmlHttp.open("GET", "http://alfastudent.hopto.org:5566/alfastudent/rest/productService/products/", true);
+        xmlHttp.open("GET", "http://alfastudent.hopto.org:5566/alfastudent/rest/productService/trending/", true);
         xmlHttp.send(null);
 
       }else{
